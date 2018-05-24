@@ -19,7 +19,7 @@ module.exports = {
 			},
 			_post: function(req, res){
 				req.logger.log("Object saved successfully")
-				req.bobjekt["powered_by"] = "abc.com"
+				req.bobjekt["fullname"] = req.bobjekt.firstname + " " + req.bobjekt.lastname
 				return this.resSuccess(req, res)
 			}
 		}
