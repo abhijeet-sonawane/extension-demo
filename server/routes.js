@@ -9,14 +9,11 @@ module.exports = {
 	"/classes/person/objects":{
 		POST: {
 			_pre:function(req, res){
-				req.bobjekt = req.bobjekt.set("totla", 22)
-				return this.resSuccess(req, res)
-			},
-			_post: function(req, res) {
-				req.bobjekt = {
-					organisation: req.bobjekt
-				}
-				return this.resSuccess(req, res)
+			   if(req.bobjekt.get("age") < 18){
+				return this.resError(req, res, {
+					age: "should be greater than or equal to 18"
+				})
+			   }
 			}
 		}
 	}
