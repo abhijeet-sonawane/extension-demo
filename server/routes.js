@@ -6,7 +6,7 @@ module.exports = {
 			return this.resSuccess(req, res, "Hello World..!!")
 		}
 	},
-	"/classes/organisation/objects":{
+	"/classes/person/objects":{
 		POST: {
 			_pre:function(req, res){
 				req.bobjekt = req.bobjekt.set("totla", 22)
