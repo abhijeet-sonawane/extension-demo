@@ -5,7 +5,7 @@ module.exports = {
 			// Returns sample response "Hello World..!!"
 			return this.resSuccess(req, res, "Hello World.. Everyone!!!")
 		}
-	},
+	}/*,
 	"/classes/person/objects":{
 		POST: {
 			_pre:function(req, res){
@@ -16,5 +16,5 @@ module.exports = {
 			   }
 			}
 		}
-	}
+	}*/
 }
