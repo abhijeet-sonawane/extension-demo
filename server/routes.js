@@ -19,6 +19,7 @@ module.exports = {
 			},
 			_post: function(req, res){
 				req.logger.log("Object saved successfully")
+				return this.resSuccess(req, res)
 			}
 		}
 	}
