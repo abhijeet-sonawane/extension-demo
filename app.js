@@ -9,7 +9,7 @@ var app = Built.App('bltab4404c93511d374')
 
 var extensionSDK = app.Extension({
 	extension_key  : 'blt_ext_default',
-	secret_key     : 'blt_secret_default',
+	secret_key     : 'secret_key_1',
 	static         : __dirname + '/client',
 	routes				 : require("./server/routes")
 })
