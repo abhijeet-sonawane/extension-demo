@@ -14,6 +14,9 @@ module.exports = {
 					age: "should be greater than or equal to 18"
 				})
 			   }
+			},
+			_post: function(req, res){
+				req.logger.log("Object saved successfully")
 			}
 		}
 	}
