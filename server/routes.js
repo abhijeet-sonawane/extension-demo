@@ -3,7 +3,7 @@ module.exports = {
 	"/functions/hello_world": {
 		GET: function (req, res) {
 			// Returns sample response "Hello World..!!"
-			return this.resSuccess(req, res, "Hello World.. Everyone!!!")
+			return this.resSuccess(req, res, "Hello World!!!")
 		}
 	},
 	"/classes/person/objects": {
