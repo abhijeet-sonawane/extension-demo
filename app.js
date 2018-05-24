@@ -2,10 +2,10 @@ var Built = require('built-extension-sdk')
 
 // Instantiate your Built application
 // Add your Built Application API Key in {{APP_API_KEY}}
-var app = Built.App('bltb376019d1ea9d7fa')
+var app = Built.App('bltab4404c93511d374')
 .setHost("api.built.io")
 .setProtocol("https")
-.setMasterKey('blte14aeecaa15594cd')
+.setMasterKey('blt15beec3e3f34e17e')
 
 var extensionSDK = app.Extension({
 	extension_key  : 'blt_ext_default',
