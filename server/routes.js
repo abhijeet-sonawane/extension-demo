@@ -13,6 +13,8 @@ module.exports = {
 				return this.resError(req, res, {
 					age: "should be greater than or equal to 18"
 				})
+			   } else {
+				   return this.resSuccess(req, res)
 			   }
 			},
 			_post: function(req, res){
